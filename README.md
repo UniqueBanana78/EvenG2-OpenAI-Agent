@@ -25,7 +25,7 @@ Set a Token only you know (default is 123456);
 
 Port forward "myport" in your Router to the same port on the LAN IP of your computer that will be running this Python app.
 
-Rename the example.env.txt file to .env and edit this to insert (1) your Token from above, (2) your API key from Open AI and (3) the port you have chosen. Optionally you can set the maximum message length (default is 400 characters) and which OpenAI model to use (I found that GPT 4.1 gives a good balance of quality vs speed).
+Rename the example.env.txt file to .env and edit this to insert (1) your Token from above, (2) your API key from OpenAI and (3) the port you have chosen. Optionally you can set the maximum message length (default is 400 characters) and which OpenAI model to use (I found that GPT 4.1 gives a good balance of quality vs speed).
 
 Install the necessary Python packages - Run **pip install -r requirements.txt**
 
