@@ -8,7 +8,9 @@ Bypasses the need for OpenClaw etc.
 **What you need:**
 
 Windows PC or server (Windows because on this version I gave it a System Tray icon so I can (a) see it's running, (b) view the log and (c) exit it cleanly - to run on other platforms you will need to edit the code to remove reliance on Windows elements);
+
 Ability to port forward a public IP on your internet connection to the same port on the LAN IP address of your PC running this app, and open any Firewall as necessary;
+
 OpenAI API account with an API key and some credits (NOT a subscription to ChatGPT, this is not the same!).
 
 **What to do:**
