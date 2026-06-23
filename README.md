@@ -29,9 +29,11 @@ Install the necessary Python packages - Run **pip install -r requirements.txt**
 
 Run: **python smartglasses.pyw** - if you configured it correctly, you will see a "Glasses" icon in your system tray. This has the option on right-click to View Log or Quit.
 
-Wearing your Even G2 glasses, say "Hey Even" and ask a question - for example, ask it for the recipe for a Strawberry Sundae. Do not ask the AI questions like "what's the time", as OpenAI doesn't know the current time!
+Wearing your Even G2 glasses, say "Hey Even" and ask a question - for example, ask it for the recipe for a Strawberry Sundae and check that you get a valid response. Do not ask the AI questions like "what's the time", as OpenAI doesn't know the current time!
 
 The server application listens for incoming webhooks from the Even Agent, validates the Token, appends the incoming message to the log, with a date/time stamp (removing any duplicates). Then it polls the OpenAI API using your API key. Finally it delivers the reponse to the Even Agent to display on the glasses, and writes the outbound message to a log, with date/time stamp.
+
+If you want to view the console output, rename smartglasses.pyw to smartglasses.py
 
 **What you can define within the smartglasses.pyw file:**
 
