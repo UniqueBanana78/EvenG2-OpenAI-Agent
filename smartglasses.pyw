@@ -165,7 +165,7 @@ def chat():
                     "messages": messages,
                     "max_completion_tokens": 150,
                 },
-                timeout=25,
+                timeout=15,
             )
             resp.raise_for_status()
             reply = resp.json()["choices"][0]["message"]["content"].strip()
