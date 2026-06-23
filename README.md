@@ -36,9 +36,13 @@ The server application listens for incoming webhooks from the Even Agent, valida
 **What you can define within the smartglasses.pyw file:**
 
 Timeout (Glasses stop listening after 30 seconds) - change **timeout=25** within the code, 25 is a good number as the glasses stop listening at 30;
+
 Number of re-tries if no response from API - change **for attempt in range(2)** to another number. The second try only happens after the timeout, set above, expires;
+
 Max token usage - change **"max_completion_tokens": 150** if you want longer answers, but keep in mind your MAX_CHARS setting in the .env will still truncate the final text;
+
 Number of messages to store in the thread before discarding - change **MAX_TURNS = 12** to a higher number if you want a longer memory, at the expense of more token use;
+
 Elapsed time (in seconds) since last message before closing the thread - change **SESSION_TTL = 600** if you wish. If you don't speak to the glasses for 600 seconds (10 minutes), the app wipes the conversation history. Next time you speak, it will be a brand new conversation. Change to 3600 to remember context for a full hour, or 120 to reset after just 2 minutes.
 
 **Risks**
