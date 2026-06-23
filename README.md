@@ -1,7 +1,9 @@
 # EvenG2-OpenAI-Agent
-Middleman between Even G2 Smart Glasses Agent and OpenAI API
+Middleman between Even G2 Smart Glasses Agent and OpenAI API.
 
 A Python server application that listens for Even AI agent messages, passes them on to the OpenAI API, and sends responses to the glasses - it achieves near-realtime responses when used with non-reasoning models.
+
+Chat to your Even G2 Smart Glasses as if you were chatting to ChatGPT!!
 
 Bypasses the need for OpenClaw etc.
 
