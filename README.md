@@ -21,7 +21,7 @@ Go to the Settings for Even AI in the Even Realities App on your phone. Under "A
 
 Set this new Agent to point to http://mydomain:myport/v1/chat/completions  (where **mydomain** is either your public IP address or domain or dynamic DNS domain for your internet connection, and **myport** is a port of your choice - default is 4567);
 
-Set a Token only you know;
+Set a Token only you know (default is 123456);
 
 Port forward "myport" in your Router to the same port on the LAN IP of your computer that will be running this Python app.
 
