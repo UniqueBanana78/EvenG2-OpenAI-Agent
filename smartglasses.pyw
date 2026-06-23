@@ -194,16 +194,6 @@ def chat():
 
     save_turn(session_key, user_msg, reply)
     signal_done(sig, reply)
-    log(f"REPLY [{agent_id}]: {reply}")
-
-    return _completion(reply, data)
-
-    if len(reply) > MAX_CHARS:
-        reply = reply[:MAX_CHARS - 1].rsplit(" ", 1)[0] + "…"
-
-    save_turn(session_key, user_msg, reply)
-    signal_done(sig, reply)
-
     # Log the reply we sent
     log(f"REPLY [{agent_id}]: {reply}")
 
