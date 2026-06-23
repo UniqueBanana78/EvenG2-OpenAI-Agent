@@ -17,7 +17,7 @@ OpenAI API account with an API key and some credits (NOT a subscription to ChatG
 
 Go to the Settings for Even AI in the Even Realities App on your phone. Under "Agent configuration", add a new agent.
 
-Set this new Agent to point to http://mydomain:myport/v1/chat/completions  (where **mydomain** is either your public IP address or domain or dynamic DNS domain for your internet connect, and **myport** is a port of your choice - default is 4567);
+Set this new Agent to point to http://mydomain:myport/v1/chat/completions  (where **mydomain** is either your public IP address or domain or dynamic DNS domain for your internet connection, and **myport** is a port of your choice - default is 4567);
 
 Set a Token only you know;
 
@@ -35,9 +35,9 @@ The server application listens for incoming webhooks from the Even Agent, valida
 
 **What you can define within the smartglasses.pyw file:**
 
-Timeout (Glasses stop listening after 30 seconds) - change **timeout=25** within the code, 25 is a good number as the glasses stop listening at 30;
+Timeout if there is no response - change **timeout=25** within the code, 25 is a good number as the glasses stop listening for a reply after 30 seconds;
 
-Number of re-tries if no response from API - change **for attempt in range(2)** to another number. The second try only happens after the timeout, set above, expires;
+Number of re-tries if no response from API - change **for attempt in range(2)** to another number. The second try only happens AFTER the timeout, set above, expires;
 
 Max token usage - change **"max_completion_tokens": 150** if you want longer answers, but keep in mind your MAX_CHARS setting in the .env will still truncate the final text;
 
@@ -47,4 +47,6 @@ Elapsed time (in seconds) since last message before closing the thread - change 
 
 **Risks**
 
-Aside from the absence of liability as covered in the MIT licence - this uses Flask web server which is not the most secure environment - Python even warns you not to use Flask on a public server. It also requires you to open a port on your router and port forward it to this app. It doesn't use SSL on the connections between the glasses and the server, so your Token is sent unencrypted (you could change this with an SSL certificate and small change to the code). The connection from the App to OpenAI is, however, made over https. **Please use at your own risk!**
+Aside from the absence of liability as covered in the MIT licence - this uses Flask web server which is not the most secure environment - Python even warns you not to use Flask on a public server. It also requires you to open a port on your router and port forward it to this app. It doesn't use SSL on the connections between the glasses and the server, so your Token is sent unencrypted (you could change this with an SSL certificate and small change to the code). The connection from the App to OpenAI is, however, made over https.
+
+**Please use at your own risk!**
