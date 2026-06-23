@@ -1,0 +1,5 @@
+pystray
+pillow
+flask
+requests
+python-dotenv
