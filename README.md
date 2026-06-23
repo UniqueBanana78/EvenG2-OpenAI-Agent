@@ -13,7 +13,7 @@ Windows PC or server (Windows because on this version I gave it a System Tray ic
 
 Ability to port forward a public IP on your internet connection to the same port on the LAN IP address of your PC running this app, and open any Firewall as necessary;
 
-OpenAI API account with an API key and some credits (NOT a subscription to ChatGPT, this is not the same!).
+OpenAI API account with an API key and some credits (NOT a subscription to ChatGPT, this is not the same!). Sign up at https://platform.openai.com/login, create an API key and add some credit. Remember never disclose your API key to anyone!
 
 **What to do:**
 
